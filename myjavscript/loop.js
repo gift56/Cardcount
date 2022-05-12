@@ -22,3 +22,12 @@ for (let i = 1; i < 10; i += 2) {
     myArray3.push(i);
 }
 console.log(myArray3);
+
+// sum and array iteration with for loop
+
+const myArray4 = [2, 3, 4, 5, 6];
+let total = 0;
+
+for (let i = 0; i < myArray4.length; i++) {
+    total += myArray4[i];
+}
