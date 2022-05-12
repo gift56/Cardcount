@@ -14,3 +14,11 @@ for (let i = 1; i < 5; i++) {
     myArray2.push(i);
 }
 console.log(myArray2);
+
+// incrementing odd number
+const myArray3 = [];
+
+for (let i = 1; i < 10; i += 2) {
+    myArray3.push(i);
+}
+console.log(myArray3);
