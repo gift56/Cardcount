@@ -7,6 +7,9 @@ const person = {
 // adding new stuff to object
 person.lifestye = "Coding";
 
+// deleting items from object
+delete person.age;
+
 console.log(person);
 
 const testObj = {
