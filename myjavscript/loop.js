@@ -45,3 +45,12 @@ function multiplyAll(arr) {
 }
 
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+// Learning do while loop
+const myArray5 = [];
+let i5 = 10;
+
+do {
+  myArray5.push(i5);
+  i++;
+} while (i5 < 5);
