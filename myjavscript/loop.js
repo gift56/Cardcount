@@ -6,3 +6,11 @@ while (i < 5) {
     i++;
 }
 console.log(myArray);
+
+// for loop
+const myArray2 = [];
+
+for (let i = 1; i < 5; i++) {
+    myArray2.push(i);
+}
+console.log(myArray2);
