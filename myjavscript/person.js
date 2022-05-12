@@ -30,5 +30,25 @@ function checkObj(obj, checkProp) {
     else {
         return "Not Found";
     }
-    // Only change code above this line
 }
+
+// manupulating object
+const myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    },
+    {
+        "artist": "Wizkid Starboy",
+        "title": "Big Ass",
+        "release_year": 2016,
+        "formats": ["CD", "100T", "LP"]
+    }
+];
