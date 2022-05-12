@@ -51,6 +51,16 @@ const myArray5 = [];
 let i5 = 10;
 
 do {
-  myArray5.push(i5);
-  i++;
+    myArray5.push(i5);
+    i++;
 } while (i5 < 5);
+
+// Working on recusion and not using loop
+function sum(arr, n) {
+    if (n <= 0) {
+        return 0;
+    }
+    else {
+        return sum(arr, n - 1) + arr[n - 1];
+    }
+}
