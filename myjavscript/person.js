@@ -52,3 +52,18 @@ const myMusic = [
         "formats": ["CD", "100T", "LP"]
     }
 ];
+
+// accessing nested object
+const myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
