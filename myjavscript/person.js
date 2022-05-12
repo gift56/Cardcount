@@ -21,3 +21,14 @@ const testObj = {
 // assign playername to player
 const playerNumber = 16;
 const player = testObj[playerNumber];
+
+// using of lookup object with has hasOwnProperty
+function checkObj(obj, checkProp) {
+    if (obj.hasOwnProperty(checkProp)) {
+        return obj[checkProp];
+    }
+    else {
+        return "Not Found";
+    }
+    // Only change code above this line
+}
