@@ -1,10 +1,11 @@
 const person = {
-
     name: "Efe",
     height: 6 + " feet tall",
     age: 18,
     friends: ["Babatunde", "Bossteeh", "Bumi", "Simeon", "Walexy"]
 }
+// adding new stuff to object
+person.lifestye = "Coding";
 
 console.log(person);
 
