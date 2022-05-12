@@ -114,3 +114,14 @@ function countdown(n) {
         return arr;
     }
 }
+// done with the basics
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum - startNum === 0) {
+        return [startNum];
+    }
+    else {
+        let numbers = rangeOfNumbers(startNum, endNum - 1);
+        numbers.push(endNum);
+        return numbers;
+    }
+};
