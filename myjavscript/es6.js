@@ -35,3 +35,5 @@ function freezeObj() {
     return MATH_CONSTANTS.PI;
   }
   const PI = freezeObj();
+// using arrow function
+const magic = () => new Date();
