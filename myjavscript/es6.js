@@ -155,3 +155,8 @@ const lowercaseString = (string) => {
     return string.toLowerCase()
 }
 export { uppercaseString, lowercaseString };
+// importing files
+import { uppercaseString, lowercaseString } from './string_functions.js';
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
