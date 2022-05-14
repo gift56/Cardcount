@@ -46,3 +46,10 @@ const increment = (number, value = 1) => number + value;
 const sum = (...args) => {
     return args.reduce((a, b) => a + b, 0);
 }
+// Using the spread operator
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];
+
+console.log(arr2);
