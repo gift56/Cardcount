@@ -185,3 +185,17 @@ const makeServerRequests = new Promise((resolve, reject) => {
         reject("Data not received");
     }
 });
+// using then()
+const makeServerRequests1 = new Promise((resolve, reject) => {
+
+    let responseFromServer = true;
+
+    if (responseFromServer) {
+        resolve("We got the data");
+    } else {
+        reject("Data not received");
+    }
+});
+makeServerRequests1.then(result => {
+    console.log(result);
+});
