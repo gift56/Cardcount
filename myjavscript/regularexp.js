@@ -22,3 +22,8 @@ let resultM = extractStr.match(codingRegex);
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /Twinkle/gi;
 let resultg = twinkleStar.match(starRegex);
+
+//using the wildcard character
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // 
+let resultun = unRegex.test(exampleStr);
