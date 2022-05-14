@@ -17,3 +17,8 @@ let resulti = fccRegex.test(myString);
 let extractStr = "Extract the word 'coding' from this string.";
 let codingRegex = /coding/;
 let resultM = extractStr.match(codingRegex);
+
+// finding multiple items in a string with mathc() in Regex
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi;
+let resultg = twinkleStar.match(starRegex);
