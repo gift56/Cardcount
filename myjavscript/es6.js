@@ -21,20 +21,20 @@ editInPlace();
 // Freezing object using object.freeze()
 function freezeObj() {
     const MATH_CONSTANTS = {
-      PI: 3.14
+        PI: 3.14
     };
     // Only change code below this line
     Object.freeze(MATH_CONSTANTS);
-  
+
     // Only change code above this line
     try {
-      MATH_CONSTANTS.PI = 99;
+        MATH_CONSTANTS.PI = 99;
     } catch (ex) {
-      console.log(ex);
+        console.log(ex);
     }
     return MATH_CONSTANTS.PI;
-  }
-  const PI = freezeObj();
+}
+const PI = freezeObj();
 // using arrow function
 const magic = () => new Date();
 const myConcat = (arr1, arr2) => arr1.concat(arr2);
@@ -42,3 +42,7 @@ const myConcat = (arr1, arr2) => arr1.concat(arr2);
 console.log(myConcat([1, 2], [3, 4, 5]));
 // assigning value defaultly using arrow function
 const increment = (number, value = 1) => number + value;
+// returning stuff with ...(anything)
+const sum = (...args) => {
+    return args.reduce((a, b) => a + b, 0);
+}
