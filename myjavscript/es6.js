@@ -119,3 +119,11 @@ const failuresList = makeList(result.failure);
 const createPerson = (name, age, gender) => {
     return { name, age, gender };
 };
+// construction function 
+class Vegetable {
+    constructor(name) {
+        this.name = name;
+    }
+}
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
