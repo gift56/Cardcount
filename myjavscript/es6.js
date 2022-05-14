@@ -199,3 +199,21 @@ const makeServerRequests1 = new Promise((resolve, reject) => {
 makeServerRequests1.then(result => {
     console.log(result);
 });
+// use the catch method for errors
+
+const makeServerRequeste = new Promise((resolve, reject) => {
+    let responseFromServer = false;
+
+    if (responseFromServer) {
+        resolve("We got the data");
+    } else {
+        reject("Data not received");
+    }
+});
+
+makeServerRequeste.then(result => {
+    console.log(result);
+});
+makeServerRequeste.catch(error => {
+    console.log(error);
+});
