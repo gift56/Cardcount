@@ -42,3 +42,8 @@ let resultMs = quoteSamplems.match(alphabetRegex);
 let difficultSpelling = "Mississippi";
 let myRegexd = /s+/g;
 let resultd = difficultSpelling.match(myRegex);
+
+// using the ? in Regex
+let text = "<h1>Winter is coming</h1>";
+let myRegexmm = /<.*?>/;
+let resultmm = text.match(myRegex);
