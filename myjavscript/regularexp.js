@@ -80,3 +80,8 @@ let resultds = quoteSampled.match(alphabetRegexV2).length;
 let movieName = "2001: A Space Odyssey";
 let noNumRegex = /\D/g; // Change this line
 let resultdd = movieName.match(noNumRegex).length;
+
+// Regex for Usernames
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
+let resultU = userCheck.test(username);
