@@ -18,10 +18,20 @@ let x = 7;
 let y = 9;
 let result = "to come";
 
-if(x == y) {
-  result = "Equal!";
+if (x == y) {
+    result = "Equal!";
 } else {
-  result = "Not equal!";
+    result = "Not equal!";
 }
 
 console.log(result);
+
+// cault math error
+function raiseToPower(b, e) {
+    return Math.pow(b, e);
+}
+
+let base = 2;
+let exp = 3;
+let power = raiseToPower(base, exp);
+console.log(power);
