@@ -68,20 +68,25 @@ let resultS = quoteSample.match(alphabetRegexV2).length;
 
 // opposite of /W
 let quoteSampleS2 = "The five boxing wizards jump quickly.";
-let alphabetRegexV2s = /\w/g; // Change this line
+let alphabetRegexV2s = /\w/g;
 let resultS2 = quoteSampleS2.match(alphabetRegexV2).length;
 
 // Using of digit
 let quoteSampled = "2001 watch";
-let alphabetRegexV2d = /\d/g; // Change this line
+let alphabetRegexV2d = /\d/g;
 let resultds = quoteSampled.match(alphabetRegexV2).length;
 
 // Non digit
 let movieName = "2001: A Space Odyssey";
-let noNumRegex = /\D/g; // Change this line
+let noNumRegex = /\D/g;
 let resultdd = movieName.match(noNumRegex).length;
 
 // Regex for Usernames
 let username = "JackOfAllTrades";
-let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
 let resultU = userCheck.test(username);
+
+// Using /s/ to search for whitespace
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let resultW = sample.match(countWhiteSpace);
