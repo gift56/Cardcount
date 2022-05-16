@@ -95,3 +95,8 @@ let resultW = sample.match(countWhiteSpace);
 let sampleWord = "astronaut";
 let pwRegex =  /(?=\w{6})(?=\w*\d{2})/
 let resultLock = pwRegex.test(sampleWord);
+
+// testing for two names
+let myStringN = "Eleanor Roosevelt";
+let myRegexN = /(Franklin|Eleanor).*Roosevelt/;
+let resulNt = myRegex.test(myString);
