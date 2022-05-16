@@ -65,3 +65,8 @@ let resultc = lastRegex.test(caboose);
 let quoteSampleS = "The five boxing wizards jump quickly.";
 let alphabetRegexV2 = /\w/g; // Change this line
 let resultS = quoteSample.match(alphabetRegexV2).length;
+
+// opposite of /W
+let quoteSampleS2 = "The five boxing wizards jump quickly.";
+let alphabetRegexV2s = /\w/g; // Change this line
+let resultS2 = quoteSample.match(alphabetRegexV2).length;
