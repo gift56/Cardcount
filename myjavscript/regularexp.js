@@ -90,3 +90,8 @@ let resultU = userCheck.test(username);
 let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g; // Change this line
 let resultW = sample.match(countWhiteSpace);
+
+// using look ahead operator(?=...)
+let sampleWord = "astronaut";
+let pwRegex =  /(?=\w{6})(?=\w*\d{2})/
+let resultLock = pwRegex.test(sampleWord);
