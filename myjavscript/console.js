@@ -69,9 +69,11 @@ console.log(mixedNumbers(['IV', 5, 'six']));
 
 // removing and replacing with splice()
 function htmlColorNames(arr) {
-    // Only change code below this line
-    arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
-    // Only change code above this line
+    let indexRemove = 0;
+    let numberRemove = 2;
+
+    arr.splice(indexRemove, numberRemove, 'DarkSalmon', 'BlanchedAlmond')
+
     return arr;
 }
 
