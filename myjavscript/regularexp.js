@@ -49,4 +49,9 @@ let myRegexmm = /<.*?>/;
 let resultmm = text.match(myRegex);
 
 // using + an any letters to match things
-let reCriminals = /C+/g; 
+let reCriminals = /C+/g;
+
+// Using of cater ^ operator
+let myText = "hello y name is jacob";
+let regex = /^hello/;
+let resultT = myText.match(regex);
