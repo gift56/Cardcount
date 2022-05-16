@@ -35,5 +35,10 @@ let resultv = quoteSample.match(vowelRegex);
 
 // matching all letters
 let quoteSamplems = "The quick brown fox jumps over the lazy dog.";
-let alphabetRegex = /[a-z]/gi; // Change this line
-let resultMs = quoteSamplems.match(alphabetRegex); // Change this line
+let alphabetRegex = /[a-z]/gi;
+let resultMs = quoteSamplems.match(alphabetRegex);
+
+// using + sign in Regex
+let difficultSpelling = "Mississippi";
+let myRegexd = /s+/g;
+let resultd = difficultSpelling.match(myRegex);
