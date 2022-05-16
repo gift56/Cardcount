@@ -75,3 +75,8 @@ let resultS2 = quoteSampleS2.match(alphabetRegexV2).length;
 let quoteSampled = "2001 watch";
 let alphabetRegexV2d = /\d/g; // Change this line
 let resultds = quoteSampled.match(alphabetRegexV2).length;
+
+// Non digit
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let resultdd = movieName.match(noNumRegex).length;
