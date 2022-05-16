@@ -69,4 +69,9 @@ let resultS = quoteSample.match(alphabetRegexV2).length;
 // opposite of /W
 let quoteSampleS2 = "The five boxing wizards jump quickly.";
 let alphabetRegexV2s = /\w/g; // Change this line
-let resultS2 = quoteSample.match(alphabetRegexV2).length;
+let resultS2 = quoteSampleS2.match(alphabetRegexV2).length;
+
+// Using of digit
+let quoteSampled = "2001 watch";
+let alphabetRegexV2d = /\d/g; // Change this line
+let resultds = quoteSampled.match(alphabetRegexV2).length;
