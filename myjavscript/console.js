@@ -78,3 +78,10 @@ function htmlColorNames(arr) {
 }
 
 console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+
+// using slice method
+function forecast(arr) {
+    return arr.slice(2, 4);;
+}
+
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
