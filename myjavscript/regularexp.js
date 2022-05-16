@@ -100,3 +100,8 @@ let resultLock = pwRegex.test(sampleWord);
 let myStringN = "Eleanor Roosevelt";
 let myRegexN = /(Franklin|Eleanor).*Roosevelt/;
 let resulNt = myRegex.test(myString);
+
+// testing for repeated numbers
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/;
+let resultNum = repeatNum.match(reRegex);
