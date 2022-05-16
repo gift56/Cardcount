@@ -51,7 +51,12 @@ let resultmm = text.match(myRegex);
 // using + an any letters to match things
 let reCriminals = /C+/g;
 
-// Using of cater ^ operator
+// Using of cater ^ operator to search for patterns from the begining
 let myText = "hello y name is jacob";
 let regex = /^hello/;
 let resultT = myText.match(regex);
+
+// Using of $ sign operator to search for the ending of the string
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let resultc = lastRegex.test(caboose);
