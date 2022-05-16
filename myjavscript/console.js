@@ -55,3 +55,14 @@ function zeroArray(m, n) {
 
 let matrix = zeroArray(3, 2);
 console.log(matrix);
+
+// Using of unshift() and push()
+function mixedNumbers(arr) {
+    // Only change code below this line
+    arr.unshift('I', 2, 'three');
+    arr.push(7, 'VIII', 9);
+    // Only change code above this line
+    return arr;
+}
+
+console.log(mixedNumbers(['IV', 5, 'six']));
