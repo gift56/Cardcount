@@ -31,7 +31,7 @@ let resultun = unRegex.test(exampleStr);
 // match multiple string in searching for vowel
 let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 let vowelRegex = /[aeiou]/gi;
-let resultv = quoteSample.match(vowelRegex); 
+let resultv = quoteSample.match(vowelRegex);
 
 // matching all letters
 let quoteSamplems = "The quick brown fox jumps over the lazy dog.";
@@ -47,3 +47,6 @@ let resultd = difficultSpelling.match(myRegex);
 let text = "<h1>Winter is coming</h1>";
 let myRegexmm = /<.*?>/;
 let resultmm = text.match(myRegex);
+
+// using + an any letters to match things
+let reCriminals = /C+/g; 
