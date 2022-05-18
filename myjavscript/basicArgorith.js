@@ -14,3 +14,11 @@ function reverseString(str) {
     }
     return reversedStr;
 }
+
+// Or use these method
+function reverseString(str) {
+    return str
+        .split("")
+        .reverse()
+        .join("");
+}
