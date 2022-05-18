@@ -37,3 +37,17 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+// Using the filter value in javascript
+function bouncer(arr) {
+    return arr.filter(Boolean);;
+}
+
+bouncer([7, "ate", "", false, 9]);
+
+// Where do i belong in freecode camp quiz
+function getIndexToIns(arr, num) {
+    return arr.filter(val => num > val).length;
+}
+
+getIndexToIns([40, 60], 50);
