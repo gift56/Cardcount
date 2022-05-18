@@ -9,3 +9,22 @@ function checkSign(num) {
 }
 
 checkSign(10);
+
+// Replacing the first leter to uppercase and the rest to lowercase
+function titleCase(str) {
+    const newTitle = str.split(" ");
+    const updatedTitle = [];
+    for (let st in newTitle) {
+        updatedTitle[st] = newTitle[st][0].toUpperCase() + newTitle[st].slice(1).toLowerCase();
+    }
+    return updatedTitle.join(" ");
+}
+
+titleCase("I'm a little tea pot");
+
+// or use Regex
+function titleCase(str) {
+    return str
+        .toLowerCase()
+        .replace(/(^|\s)\S/g, L => L.toUpperCase());
+}
