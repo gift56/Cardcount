@@ -73,3 +73,25 @@ function confirmEnding(str, target) {
 }
 
 confirmEnding("Bastian", "n");
+
+// reapeting a string
+function repeatStringNumTimes(str, num) {
+    let accumulatedStr = "";
+
+    for (let i = 0; i < num; i++) {
+        accumulatedStr += str;
+    }
+
+    return accumulatedStr;
+}
+
+repeatStringNumTimes("abc", 3);
+
+// OR Use if else statement
+function repeatStringNumTimes(str, num) {
+    if (num < 1) {
+        return "";
+    } else {
+        return str + repeatStringNumTimes(str, num - 1);
+    }
+}
