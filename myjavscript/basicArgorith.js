@@ -95,3 +95,13 @@ function repeatStringNumTimes(str, num) {
         return str + repeatStringNumTimes(str, num - 1);
     }
 }
+// Truncanting a string that is replacing a given string
+function truncateString(str, num) {
+    if (str.length > num) {
+        return str.slice(0, num) + "...";
+    }
+    else {
+        return str;
+    }
+}
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
