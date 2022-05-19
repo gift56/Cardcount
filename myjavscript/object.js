@@ -22,3 +22,11 @@ function Dogs() {
 }
 // Only change code below this line
 let hound = new Dogs();
+
+// Passing primeters to construction object
+function Dogs(name, color) {
+    this.name = name;
+    this.color = color;
+    this.numLegs = 4;
+}
+let terrier = new Dog("Billi", "orange");
