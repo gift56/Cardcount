@@ -40,3 +40,18 @@ function House(numBedrooms) {
 let myHouse = new House(5);
 
 myHouse instanceof House;
+
+// Using construction object to set property for two object using for loop
+function Bird(name) {
+    this.name = name;
+    this.numLegs = 2;
+}
+
+let canary = new Bird("Tweety");
+let ownProps = [];
+// Only change code below this line
+for (let property in canary) {
+    if (canary.hasOwnProperty(property)) {
+        ownProps.push(property);
+    }
+}
