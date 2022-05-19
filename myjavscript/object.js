@@ -144,7 +144,7 @@ let beaglep = new Dog("Snoopy");
 // Only change code below this line
 Dog.prototype.isPrototypeOf(beagle);
 
-// conbining the chin
+// conbining the chain
 function Dog(name) {
     this.name = name;
 }
@@ -181,3 +181,18 @@ Animal.prototype = {
         console.log("nom nom nom")
     }
 };
+
+// using object.create() to access Animal
+function Animal() { }
+
+Animal.prototype = {
+    constructor: Animal,
+    eat: function () {
+        console.log("nom nom nom");
+    }
+};
+
+// Only change code below this line
+
+let duck = Object.create(Animal.prototype); // Change this line
+let beagled = Object.create(Animal.prototype); // Change this line
