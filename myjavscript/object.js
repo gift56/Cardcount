@@ -196,3 +196,20 @@ Animal.prototype = {
 
 let duck = Object.create(Animal.prototype); // Change this line
 let beagled = Object.create(Animal.prototype); // Change this line
+
+// Making the children to have the property of parent
+function Animal() { }
+
+Animal.prototype = {
+    constructor: Animal,
+    eat: function () {
+        console.log("nom nom nom");
+    }
+};
+
+function Dog() { }
+
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagleP= new Dog();
