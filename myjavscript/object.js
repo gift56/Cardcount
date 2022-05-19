@@ -133,3 +133,13 @@ Dog.prototype = {
         console.log("My name is " + this.name);
     }
 };
+
+// Using isPrototypeOf()
+function Dog(name) {
+    this.name = name;
+}
+
+let beaglep = new Dog("Snoopy");
+
+// Only change code below this line
+Dog.prototype.isPrototypeOf(beagle);
