@@ -297,3 +297,19 @@ function Bird() {
 (function () {
     console.log("A cozy nest is ready");
 })();
+
+// Using (IIFE) in combining mixin
+let funModule = (function () {
+    return {
+        isCuteMixin: function (obj) {
+            obj.isCute = function () {
+                return true;
+            };
+        },
+        singMixin: function (obj) {
+            obj.sing = function () {
+                console.log("Singing to an awesome tune");
+            };
+        }
+    }
+})();
