@@ -284,3 +284,11 @@ let glideMixin = function (obj) {
 }
 glideMixin(bird);
 glideMixin(boat);
+
+// Creating a private varible
+function Bird() {
+    let weight = 15;
+    this.getWeight = function () {
+        return weight;
+    }
+}
