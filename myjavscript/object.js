@@ -100,3 +100,19 @@ function joinDogFraternity(candidate) {
         return false;
     }
 }
+
+// Adding more properties to a prototype
+function Dog(name) {
+    this.name = name;
+}
+
+Dog.prototype = {
+    // Only change code below this line
+    numLegs: 4,
+    eat: function () {
+        console.log("Dog love to eat")
+    },
+    describe: function () {
+        console.log("Dogs are describe as an animal")
+    }
+};
