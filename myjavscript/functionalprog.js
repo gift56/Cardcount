@@ -105,3 +105,54 @@ function incrementer(value) {
     // Only change code above this line
 }
 let differentValue = incrementer(fixedValues);
+
+// Refactor Global Variables Out of Functions
+
+// The global variable
+const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+// Change code below this line
+function add(arr, bookName) {
+    let newArr = [...arr];
+    newArr.push(bookName);
+    return newArr;
+    // Change code above this line
+}
+
+// Change code below this line
+function remove(arr, bookName) {
+    let newArr = [...arr];
+    if (newArr.indexOf(bookName) >= 0) {
+        newArr.splice(newArr.indexOf(bookName), 1);
+        return newArr;
+    }
+    // Change code above this line
+}
+let newBookList = add(bookList, 'A Brief History of Time');
+let newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
+let newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
+
+// Or use these method
+
+// the global variable
+var bookLists = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+/* This function should add a book to the list and return the list */
+// New parameters should come before bookName
+
+function add(list, bookName) {
+    return [...list, bookName];
+}
+
+/* This function should remove a book from the list and return the list */
+// New parameters should come before the bookName one
+
+function remove(list, bookName) {
+    return list.filter(book => book !== bookName);
+}
+
+var newBookLists = add(bookList, 'A Brief History of Time');
+var newerBookLists = remove(bookList, 'On The Electrodynamics of Moving Bodies');
+var newestBookLists = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
+
+console.log(bookList);
