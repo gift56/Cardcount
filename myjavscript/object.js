@@ -7,14 +7,14 @@ let dog = {
 
 dog.sayLegs();
 
-// Declaring a construction object
+// Declaring a constructor object
 function Dog() {
     this.name = "Willams";
     this.color = "brown";
     this.numLegs = 4;
 }
 
-// Using a construction object to reate a new object with new keyword
+// Using a constructor object to reate a new object with new keyword
 function Dogs() {
     this.name = "Rupert";
     this.color = "brown";
@@ -23,7 +23,7 @@ function Dogs() {
 // Only change code below this line
 let hound = new Dogs();
 
-// Passing primeters to construction object
+// Passing primeters to constructor object
 function Dogs(name, color) {
     this.name = name;
     this.color = color;
@@ -31,7 +31,7 @@ function Dogs(name, color) {
 }
 let terrier = new Dog("Billi", "orange");
 
-// Using instanceOf to compare construction object and object
+// Using instanceOf to compare constructor object and object
 function House(numBedrooms) {
     this.numBedrooms = numBedrooms;
 }
@@ -41,7 +41,7 @@ let myHouse = new House(5);
 
 myHouse instanceof House;
 
-// Using construction object to set property for two object using for loop
+// Using constructor object to set property for two object using for loop
 function Bird(name) {
     this.name = name;
     this.numLegs = 2;
@@ -83,5 +83,20 @@ for (let property in beagle) {
     }
     else {
         prototypeProps.push(property);
+    }
+}
+
+// Using if else statement to check for costructor
+function Dog(name) {
+    this.name = name;
+}
+
+// Only change code below this line
+function joinDogFraternity(candidate) {
+    if (candidate.constructor === Dog) {
+        return true;
+    }
+    else {
+        return false;
     }
 }
