@@ -30,3 +30,13 @@ function Dogs(name, color) {
     this.numLegs = 4;
 }
 let terrier = new Dog("Billi", "orange");
+
+// Using instanceOf to compare construction object and object
+function House(numBedrooms) {
+    this.numBedrooms = numBedrooms;
+}
+
+// Only change code below this line
+let myHouse = new House(5);
+
+myHouse instanceof House;
