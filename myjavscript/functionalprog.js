@@ -94,3 +94,14 @@ function incrementer() {
     return fixedValue + 1;
     // Only change code above this line
 }
+
+// making ur declaerd function affect global varible
+// The global variable
+let fixedValues = 4;
+
+// Only change code below this line
+function incrementer(value) {
+    return value + 1;
+    // Only change code above this line
+}
+let differentValue = incrementer(fixedValues);
