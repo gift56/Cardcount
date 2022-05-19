@@ -116,3 +116,20 @@ Dog.prototype = {
         console.log("Dogs are describe as an animal")
     }
 };
+
+// Remember to assign the constructor object back
+function Dog(name) {
+    this.name = name;
+}
+
+// Only change code below this line
+Dog.prototype = {
+    constructor: Dog,
+    numLegs: 4,
+    eat: function () {
+        console.log("nom nom nom");
+    },
+    describe: function () {
+        console.log("My name is " + this.name);
+    }
+};
