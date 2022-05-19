@@ -61,8 +61,27 @@ function Dog(name) {
     this.name = name;
     Dog.prototype.numLegs = 4;
 }
-
-
-
 // Only change code above this line
 let beagle = new Dog("Snoopy");
+
+// adding prototype property and into it's own array
+function Dog(name) {
+    this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagles = new Dog("Snoopy");
+
+let ownPropss = [];
+let prototypeProps = [];
+
+// Only change code below this line
+for (let property in beagle) {
+    if (beagles.hasOwnProperty(property)) {
+        ownPropss.push(property);
+    }
+    else {
+        prototypeProps.push(property);
+    }
+}
