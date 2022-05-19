@@ -212,4 +212,20 @@ function Dog() { }
 // Only change code below this line
 Dog.prototype = Object.create(Animal.prototype);
 
-let beagleP= new Dog();
+let beagleP = new Dog();
+
+// Leting thier children know where they are being gotten from
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+// Only change code below this line
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+
+
+let ducks = new Bird();
+let beaglePa = new Dog();
