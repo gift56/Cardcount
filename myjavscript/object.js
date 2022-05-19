@@ -6,3 +6,10 @@ let dog = {
 };
 
 dog.sayLegs();
+
+// Declaring a construction object
+function Dog() {
+    this.name = "Willams";
+    this.color = "brown";
+    this.numLegs = 4;
+}
