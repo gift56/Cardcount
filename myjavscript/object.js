@@ -55,3 +55,14 @@ for (let property in canary) {
         ownProps.push(property);
     }
 }
+
+// Using .prototype to avoid repetation of codes
+function Dog(name) {
+    this.name = name;
+    Dog.prototype.numLegs = 4;
+}
+
+
+
+// Only change code above this line
+let beagle = new Dog("Snoopy");
