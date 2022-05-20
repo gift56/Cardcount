@@ -237,3 +237,15 @@ function sumFibs(num) {
 }
 
 sumFibs(4);
+
+// Suming all prime number that starts with 2
+function sumPrimes(num) {
+    let primes = [];
+    for (let i = 2; i <= num; i++) {
+        if (primes.every((prime) => i % prime !== 0))
+            primes.push(i);
+    }
+    return primes.reduce((sum, prime) => sum + prime, 0);
+}
+
+sumPrimes(10);
