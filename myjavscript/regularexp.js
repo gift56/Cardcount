@@ -93,7 +93,7 @@ let resultW = sample.match(countWhiteSpace);
 
 // using look ahead operator(?=...)
 let sampleWord = "astronaut";
-let pwRegex =  /(?=\w{6})(?=\w*\d{2})/
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/
 let resultLock = pwRegex.test(sampleWord);
 
 // testing for two names
@@ -116,3 +116,13 @@ let resultR = str.replace(fixRegex, replaceText);
 let hello = "   Hello, World!  ";
 let wsRegex = /^\s+|\s+$/g;
 let resultw = hello.replace(wsRegex, "");
+
+// Using split method
+function splitify(str) {
+    // Only change code below this line
+    return str.split(/\W/);
+
+    // Only change code above this line
+}
+
+splitify("Hello World,I-am code");
