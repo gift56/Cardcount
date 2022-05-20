@@ -483,3 +483,15 @@ function nonMutatingConcat(original, attach) {
 const first = [1, 2, 3];
 const second = [4, 5];
 nonMutatingConcat(first, second);
+
+// using concat() to add instead of push()
+function nonMutatingPush(original, newItem) {
+    // Only change code below this line
+    return original.concat(newItem);
+
+    // Only change code above this line
+}
+
+const firsts = [1, 2, 3];
+const seconds = [4, 5];
+nonMutatingPush(firsts, seconds);
