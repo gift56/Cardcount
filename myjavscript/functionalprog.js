@@ -639,3 +639,16 @@ const squareList = arr => {
 
 const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
 console.log(squaredIntegers);
+
+// using concat ad sort() in avoiding toiling with the array
+const globalArray = [5, 6, 3, 2, 9];
+
+function nonMutatingSort(arr) {
+    // Only change code below this line
+    return [].concat(arr).sort(function (a, b) {
+        return a - b;
+    });
+    // Only change code above this line
+}
+
+nonMutatingSort(globalArray);
