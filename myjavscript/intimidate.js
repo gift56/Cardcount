@@ -314,3 +314,19 @@ function binaryAgent(str) {
 }
 
 binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
+
+// Making everything true
+function truthCheck(collection, pre) {
+    let counter = 0;
+    // Check for each object
+    for (let c in collection) {
+        // If it is has property and value is truthy
+        if (collection[c].hasOwnProperty(pre) && Boolean(collection[c][pre])) {
+            counter++;
+        }
+    }
+    // Outside the loop, check to see if we got true for all of them and return true or false
+    return counter == collection.length;
+}
+
+truthCheck([{ name: "Quincy", role: "Founder", isBot: false }, { name: "Naomi", role: "", isBot: false }, { name: "Camperbot", role: "Bot", isBot: true }], "isBot");
