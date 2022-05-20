@@ -678,3 +678,14 @@ function urlSlug(title) {
 let winterComing = urlSlug(globalTitle);
 // Only change code above this line
 urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
+
+// Using every()
+
+function checkPositive(arr) {
+    // Only change code below this line
+    return arr.every(val => val > 0);
+  
+    // Only change code above this line
+  }
+  
+  checkPositive([1, 2, 3, -4, 5]);
