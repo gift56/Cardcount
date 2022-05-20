@@ -661,3 +661,20 @@ function sentensify(str) {
 }
 
 sentensify("May-the-force-be-with-you");
+
+// changing string to URL using URLslug
+
+// Only change code below this line
+let globalTitle = "Winter Is Coming";
+
+function urlSlug(title) {
+    return title
+        .toLowerCase()
+        .trim()
+        .split(/\s+/)
+        .join("-");
+}
+
+let winterComing = urlSlug(globalTitle);
+// Only change code above this line
+urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
