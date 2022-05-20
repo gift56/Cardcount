@@ -330,3 +330,17 @@ function truthCheck(collection, pre) {
 }
 
 truthCheck([{ name: "Quincy", role: "Founder", isBot: false }, { name: "Naomi", role: "", isBot: false }, { name: "Camperbot", role: "Bot", isBot: true }], "isBot");
+
+// arguement sections
+function addTogether() {
+    const [first, second] = arguments;
+    if (typeof (first) !== "number")
+        return undefined;
+    if (second === undefined)
+        return (second) => addTogether(first, second);
+    if (typeof (second) !== "number")
+        return undefined;
+    return first + second;
+}
+
+addTogether(2, 3);
