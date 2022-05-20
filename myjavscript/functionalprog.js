@@ -685,8 +685,22 @@ function checkPositive(arr) {
     // Only change code below this line
     return arr.every(val => val > 0);
     // return arr.some(val => val > 0);
-  
+
     // Only change code above this line
-  }
-  
-  checkPositive([1, 2, 3, -4, 5]);
+}
+
+checkPositive([1, 2, 3, -4, 5]);
+
+// Using Curying method
+
+function add(x) {
+    // Only change code below this line
+    return function (y) {
+        return function (z) {
+            return x + y + z;
+        };
+    };
+    // Only change code above this line
+}
+
+add(10)(20)(30);
