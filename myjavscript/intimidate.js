@@ -18,3 +18,14 @@ function diffArray(arr1, arr2) {
 }
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+// seek and destroy
+function destroyer(arr) {
+    let valsToRemove = Array.from(arguments).slice(1);
+
+    return arr.filter(function (val) {
+        return !valsToRemove.includes(val);
+    });
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
