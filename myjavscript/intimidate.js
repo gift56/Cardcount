@@ -203,3 +203,19 @@ function uniteUnique(arr) {
 }
 
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
+// using some tags to achieve html tag
+function convertHTML(str) {
+    // Use Object Lookup to declare as many HTML entities as needed.
+    const htmlEntities = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&apos;"
+    };
+    // Using a regex, replace characters with it's corresponding html entity
+    return str.replace(/([&<>\"'])/g, match => htmlEntities[match]);
+}
+
+convertHTML("Dolce & Gabbana");
